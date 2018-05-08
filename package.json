@@ -1,13 +1,17 @@
 {
   "name": "pokedex-react",
   "version": "1.0.0",
-  "description": "This is a code challenge to make a functional pokedex in ReactJS",
+  "description": "This is a project to create a pokedex app in ReactJS",
   "main": "webpack.config.js",
   "scripts": {
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",
     "build:prod": "webpack -p --env.NODE_ENV=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuskata/pokedex-react.git"
   },
   "keywords": [
     "react"
@@ -29,6 +33,10 @@
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.3"
   },
+  "bugs": {
+    "url": "https://github.com/jesuskata/pokedex-react/issues"
+  },
+  "homepage": "https://github.com/jesuskata/pokedex-react#readme",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"

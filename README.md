@@ -4,7 +4,7 @@ This is a code challenge to do functional pokédex in ReactJS
 
 ## Installation
 
-In the _Terminal_:
+Download the file and search it with the _Terminal_ __~/pokedex-react:__
 
 + ```npm install```
 + ```npm run build:dev```

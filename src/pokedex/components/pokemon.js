@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import './pokemon.css';
 
-class Pokemon extends Component {
+class Pokemon extends PureComponent {
   render() {
     const { pokemon, id } = this.props;
     return(

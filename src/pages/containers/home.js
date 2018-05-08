@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return(
       <HomeLayout>
-        <h1>Pokémon List</h1>
+        <h1>Pokémon List with ReactJS and PokeAPI</h1>
         <Pokedex />
       </HomeLayout>
     )

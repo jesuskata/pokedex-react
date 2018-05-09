@@ -3,7 +3,6 @@ import HomeLayout from '../components/home-layout';
 import Pokedex from '../../pokedex/containers/pokedex';
 import ModalContainer from '../../widgets/containers/modal-container';
 import Modal from '../../widgets/components/modal';
-import PokemonSelected from '../../pokedex/components/pokemon-selected';
 
 class Home extends Component {
   state = {
@@ -14,7 +13,7 @@ class Home extends Component {
       modalVisible: true,
       pokemon
     })
-    console.log(this.state);
+    // console.log(this.state.pokemon);
   }
   handleCloseModal = (event) => {
     this.setState({

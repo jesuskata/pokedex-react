@@ -1,45 +1,34 @@
 import React, { Component } from 'react';
 import Pokemon from '../components/pokemon';
+import axios from 'axios';
 
 class Pokedex extends Component {
   state = {
     species: [],
-    fetched: false,
-    loading: false,
   }
   componentWillMount() {
-    this.setState({
-      loading: true,
-    });
-    fetch('http://pokeapi.salestock.net/api/v2/pokemon?limit=151').then(res => res.json()).then(response => {
+    axios.get(`http://pokeapi.salestock.net/api/v2/pokemon?limit=151`)
+    .then( response => {
+      // console.log(response.data.results)
       this.setState({
-        species: response.results,
-        loading: true,
-        fetched: true,
+        species: response.data.results,
       })
     })
   }
   render() {
-    const { fetched, loading, species } = this.state;
-    let content;
-    if(fetched) {
-      content =
-      <div>
-        {
-          species.map((pokemon,index) => {
-            return(
-              <Pokemon
-                key={pokemon.name}
-                id={index+1}
-                pokemon={pokemon}
-              />
-            )})
-        }
-      </div>;
-    }
+    const { species } = this.state;
     return(
-      <div>
-        { content }
+      <div className="pokemon--species--list">
+        {
+          species.map((pokemon, index) =>
+            <Pokemon
+              key={pokemon.name}
+              id={index + 1}
+              pokemon={pokemon}
+              openModal={this.props.handleOpenModal}
+            />
+          )
+        }
       </div>
     )
   }

@@ -3,6 +3,7 @@ import HomeLayout from '../components/home-layout';
 import Pokedex from '../../pokedex/containers/pokedex';
 import ModalContainer from '../../widgets/containers/modal-container';
 import Modal from '../../widgets/components/modal';
+import DetailView from '../../pokedex/components/detail-view';
 
 class Home extends Component {
   state = {
@@ -33,6 +34,9 @@ class Home extends Component {
             <Modal
               handleClick={this.handleCloseModal}
             >
+              <DetailView
+                pokemon={this.state.pokemon}
+              />
             </Modal>
           </ModalContainer>
         }

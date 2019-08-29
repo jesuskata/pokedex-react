@@ -4,7 +4,7 @@
   "description": "This is a project to create a pokedex app in ReactJS",
   "main": "webpack.config.js",
   "scripts": {
-    "now-build": "npm run build -p --env.NODE_ENV=production",
+    "now-build": "npm run build:prod",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",

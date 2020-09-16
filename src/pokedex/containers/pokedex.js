@@ -7,7 +7,7 @@ class Pokedex extends Component {
     species: [],
   }
   componentWillMount() {
-    axios.get(`https://cors-anywhere.herokuapp.com/http://pokeapi.salestock.net/api/v2/pokemon?limit=151`)
+    axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=251`)
     .then( response => {
       this.setState({
         species: response.data.results,

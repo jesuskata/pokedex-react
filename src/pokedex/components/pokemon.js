@@ -8,13 +8,14 @@ class Pokemon extends Component {
   }
   render() {
     const { pokemon, id } = this.props;
+    console.log('pokemon')
     return(
       <div className="pokemon--species" onClick={this.handleClick}>
         <div className="pokemon--species--container">
           <div className="pokemon--species--sprite">
-            <img src={`/public/sprites/${id}.png`}/>
+            <img src={`/public/sprites-02/${id}.gif`}/>
           </div>
-          <div className="pokemon--species-name"> {pokemon.name} </div>
+          <div className="pokemon--species-name"> {`${id} ${pokemon.name}`} </div>
         </div>
       </div>
     )

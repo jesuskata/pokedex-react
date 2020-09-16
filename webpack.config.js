@@ -15,7 +15,6 @@ module.exports = (env) => {
   }
 
   return {
-
     entry: {
       "home": path.resolve(__dirname, 'src/entries/home.js'),
     },
@@ -52,7 +51,7 @@ module.exports = (env) => {
                   url: (url, resourcePath) => {
                     // resourcePath - path to css file
                     // Don't handle `img.png` urls
-                    if (url.includes('img.png')) {
+                    if (url.includes('img.gif')) {
                       return false;
                     }
                     return true;

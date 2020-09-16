@@ -51,7 +51,7 @@ module.exports = (env) => {
                   url: (url, resourcePath) => {
                     // resourcePath - path to css file
                     // Don't handle `img.png` urls
-                    if (url.includes('img.gif')) {
+                    if (url.includes('img.png')) {
                       return false;
                     }
                     return true;

@@ -13,7 +13,7 @@ class Pokemon extends Component {
       <div className="pokemon--species" onClick={this.handleClick}>
         <div className="pokemon--species--container">
           <div className="pokemon--species--sprite">
-            <img src={`/public/sprites/${id}.gif`}/>
+            <img src={`/public/sprites/${id}.png`}/>
           </div>
           <div className="pokemon--species-name"> {`${id} ${pokemon.name}`} </div>
         </div>

@@ -33,7 +33,7 @@
     "url-loader": "0.6.2",
     "webpack": "3.8.1",
     "webpack-cli": "3.3.7",
-    "webpack-dev-server": "2.11.5"
+    "webpack-dev-server": "3.1.11"
   },
   "bugs": {
     "url": "https://github.com/jesuskata/pokedex-react/issues"
